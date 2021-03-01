@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+    <div class="login-header"><a id="link" href="javascript:void(0);">注册</a></div>
+    <div id="login" class="login">
+        <div id="title" class="login-title">注册
+            <span><a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a></span>
+        </div>
+        <form class="login-input-content" action="registUserServlet" method="post">
+            <div class="login-input">
+                <label>用户名：</label>
+                <input type="text" placeholder="请输入用户名" name="username" id="username" class="list-input">
+            </div>
+            <div class="login-input">
+                <label>登录密码：</label>
+                <input type="password" placeholder="请输入登录密码" name="password" id="password" class="list-input">
+            </div>
+            <div id="loginBtn" class="login-button"><input type="submit" value="注册" id="login-button-submit"></div>
+        </form>
+    </div><!--框-->
+    <div id="bg" class="login-bg"></div><!--遮挡层-->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
